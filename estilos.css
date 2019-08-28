@@ -1,0 +1,57 @@
+/*
+poner la altura a 100% en las estiquetas body html para que la imagen de fondi cubra toda la pagina
+*/
+body,html{
+	height: 100%
+	/*height es altura*/
+}
+.imgfondo{
+	/*Imagen de fondo*/
+	background-image: url('img/fondo.jpg');
+	/*pantalla completa*/
+	height: 100%;
+	/*centramos la imagen de fondo*/
+	background-position: center;
+	/*Escalar y hacer zoom en la imagen*/
+	background-size: cover;
+	/*para repetir elementos dentro de la imagen posicionados
+	 de manera absoluta, pór ejemplo: algun texto*/
+	 position: relative;
+	 /*todo elemento dentro de la clase .img/fondo
+	 tendra el color blanco si estos fueran de texto.*/
+	 color: white;
+	/* font-family: "Mystery Quest",Mystery Quest;*/
+	  font-family: "Mystery Quest";  	
+	  /*obligo a la fuente que tenga un tamaño de 25px*/
+
+	}
+/*posicion de texto en el medio.*/
+.medio
+{
+	position: absolute;	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.arribaizquierda
+{
+/*posicion en el texto en la esquina que se encuentraarriba
+ a la izquierda */
+position:absolute;
+top: 0;
+left: 16px;
+}
+.abajoizquierda
+{
+	/*posicion del texto en la esquina que se encuentra en
+ la esquina abajo a la izquierda*/
+	position: absolute;
+	bottom: 0;
+	left: 16px;
+}
+/*estilizar linea horizontal*/
+hr
+{
+	margin: auto;
+	width: 40%;
+}
